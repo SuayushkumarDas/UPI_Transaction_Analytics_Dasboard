@@ -1,219 +1,212 @@
 <div align="center">
 
-💳 UPI Transaction Analytics Dashboard
+# 💳 UPI Transaction Analytics Dashboard
 
-Turning UPI transaction data into clear, actionable insights.
+### Turning UPI Transaction Data into Actionable Insights
 
-Explore payment performance, transaction trends, bank and app activity, geographic patterns, and potentially fraudulent transactions in one interactive dashboard.
+An interactive dashboard for analyzing UPI payment trends, transaction performance, bank-wise activity, geographic distribution, and suspected fraud indicators.
 
-<br/>
+<br>
 
+![Project](https://img.shields.io/badge/Project-Data_Analytics-6A1B9A?style=for-the-badge)
+![Domain](https://img.shields.io/badge/Domain-Digital_Payments-5E35B1?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Focus-Business_Intelligence-16803C?style=for-the-badge)
 
+<br>
 
+<img src="https://github.com/SuayushkumarDas/UPI_Transaction_Analytics_Dasboard/raw/main/assets/upi-dashboard.png" alt="UPI Transaction Analytics Dashboard" width="100%">
 
+<br>
 
-<br/>
-
-📊 Dashboard Preview
-
-
+**Explore transaction patterns. Analyze performance. Discover insights.**
 
 </div>
 
-📌 Overview
+---
 
-The UPI Transaction Analytics Dashboard brings key metrics and visual summaries of UPI transaction data into one place. It helps users explore transaction performance and patterns across time, payment applications, banks, states, transaction types, and transaction statuses.
+## 📌 Overview
 
-By combining high-level KPIs with detailed charts and filters, the dashboard makes transaction data easier to explore, interpret, and communicate.
+The **UPI Transaction Analytics Dashboard** transforms transaction data into meaningful visual insights through an interactive and visually organized dashboard.
 
-Project goal: Turn transaction data into clear, practical insights through an intuitive dashboard.
+The project provides an overview of transaction performance and enables users to explore patterns across payment applications, banks, states, transaction types, transaction statuses, and time periods.
 
-✨ Dashboard Highlights
+By combining key performance indicators (KPIs) with interactive visualizations, the dashboard makes financial transaction data easier to understand and analyze.
 
-Analysis Area
+### 🎯 Project Objectives
 
-What It Shows
+- Monitor overall UPI transaction performance.
+- Analyze transaction amounts across different categories.
+- Understand transaction success, failure, pending, and refund patterns.
+- Explore bank-wise and state-wise transaction distribution.
+- Identify peak transaction hours and recurring time-based patterns.
+- Examine transactions flagged as potentially fraudulent.
 
-KPI Overview
+---
 
-Total transactions, transaction amount, success rate, and suspected-fraud count
+## ✨ Dashboard Features
 
-Time Trends
+| Feature | Description |
+|---|---|
+| 📊 KPI Overview | Displays total transactions, total transaction amount, success rate, and suspected fraud count. |
+| 📈 Transaction Trends | Tracks transaction amounts over time. |
+| 📱 UPI App Analysis | Compares transaction distribution across payment applications. |
+| ✅ Transaction Status | Analyzes successful, failed, pending, and refunded transactions. |
+| 🗺️ Geographic Analysis | Visualizes transaction amounts across states. |
+| 🏦 Bank Analysis | Compares transaction amounts by bank. |
+| 💸 Transaction Type Analysis | Examines payment categories such as P2P, P2M, bill payments, and online shopping. |
+| 🕒 Hourly Analysis | Identifies transaction amount patterns across different hours. |
+| 🔥 Day–Hour Heatmap | Highlights transaction patterns across days of the week and hours. |
+| 🎛️ Interactive Filters | Enables focused exploration using the available dashboard filters. |
 
-Daily transaction amount over time
+---
 
-UPI App Analysis
+## 📊 Key Performance Indicators
 
-Transaction distribution across the payment apps represented in the dataset
+The dashboard highlights important metrics for understanding transaction performance.
 
-Transaction Status
+| KPI | Purpose |
+|---|---|
+| Total Transactions | Measures the number of transactions in the selected data. |
+| Total Transaction Amount | Represents the total transaction value in INR. |
+| Success Rate | Measures the percentage of transactions marked successful. |
+| Suspected Fraud | Counts transactions flagged as potentially fraudulent. |
+| Transaction Amount by Hour | Shows how transaction value varies throughout the day. |
+| Transaction Amount by State | Compares transaction value across states. |
+| Transaction Amount by Bank | Evaluates transaction value across banks. |
+| Transaction Amount by Type | Compares transaction value across payment categories. |
 
-Distribution of successful, failed, pending, and refunded transactions
+### 🧮 KPI Calculations
 
-Geographic Analysis
+**Transaction Success Rate**
 
-Transaction amount by state
+Success Rate = (Successful Transactions / Total Transactions) × 100
 
-Bank Analysis
+**Suspected Fraud Rate**
 
-Transaction amount comparisons across banks
+Suspected Fraud Rate = (Transactions Flagged as Suspected Fraud / Total Transactions) × 100
 
-Transaction Types
+*Note: These formulas assume consistent transaction definitions. The suspected fraud rate should only be calculated if the source dataset supports it. Suspected fraud does not necessarily mean confirmed fraud.*
 
-Activity across payment categories represented in the dataset
+---
 
-Hourly Analysis
+## 🔍 Business Questions
 
-Transaction amount grouped by hour
+This dashboard can help investigate the following questions:
 
-Day–Hour Heatmap
+1. How does transaction value change over time?
+2. Which UPI applications account for the largest share of transactions?
+3. Which banks contribute the highest transaction value?
+4. Which states have the highest transaction amounts?
+5. What percentage of transactions are successful, failed, pending, or refunded?
+6. During which hours is transaction activity highest?
+7. How does transaction value vary across payment categories?
+8. How are transactions flagged as potentially fraudulent distributed across available categories?
 
-Time-based patterns across days of the week and hours
+These questions can support exploratory analysis and business discussions. Actual findings should be derived from and validated against the underlying dataset.
 
-Interactive Filters
+---
 
-Explore the data using the filters available in the dashboard
+## 🧰 Tools & Technologies
 
-📊 Key Metrics
+Update this section to reflect the tools actually used in your project.
 
-Total Transactions — number of transactions in the current selection.
+- **Dashboard & Visualization:** Power BI *(if applicable)*
+- **Data Preparation:** Power Query, Excel, or Python *(include only the tools used)*
+- **Data Source:** UPI transaction dataset
+- **Version Control:** Git and GitHub
 
-Total Transaction Amount (INR) — total transaction value represented in Indian rupees.
+---
 
-Success Rate — percentage of transactions marked successful.
+## 🗂️ Project Structure
 
-Suspected Fraud — number of transactions flagged as potentially fraudulent.
-
-Transaction Amount by Hour — transaction value grouped by hour.
-
-Transaction Amount by State, Bank, and Type — comparisons across the available categories.
-
-KPI Definitions
-
-Use consistent definitions when validating or extending the report.
-
-Success Rate
-
-$$
-\text{Success Rate} = \frac{\text{Successful Transactions}}{\text{Total Transactions}} \times 100
-$$
-
-Suspected Fraud Rate (include only if supported by the source data)
-
-$$
-\text{Suspected Fraud Rate} = \frac{\text{Transactions Flagged as Suspected Fraud}}{\text{Total Transactions}} \times 100
-$$
-
-Important: Suspected fraud is not the same as confirmed fraud. Validate all measures against the dataset and the report's calculation logic.
-
-🔍 Business Questions
-
-The dashboard can help investigate questions such as:
-
-How does transaction value change over time?
-
-Which payment apps account for the largest share of transactions?
-
-Which banks and states contribute the most transaction value?
-
-What share of transactions are successful, failed, pending, or refunded?
-
-During which hours is transaction activity highest?
-
-How does transaction value vary by transaction type?
-
-How are transactions flagged as potentially fraudulent distributed across available categories?
-
-These are questions the dashboard can help explore. Report conclusions only after validating the underlying data.
-
-🧰 Tools & Technologies
-
-Update this section to reflect the tools actually used in your implementation.
-
-Dashboard / Visualization: Power BI (if applicable)
-
-Data Preparation: Power Query, Excel, or Python (keep only the tools you used)
-
-Data Source: Add the dataset name and source
-
-Version Control: Git and GitHub
-
-🗂️ Repository Structure
-
+```text
 UPI_Transaction_Analytics_Dasboard/
+│
 ├── assets/
 │   └── upi-dashboard.png
+│
 ├── data/
 │   └── README.md
+│
 ├── UPI-Transaction-Dashboard.pbix
+│
 └── README.md
+```
 
-File guide
+**Repository contents:**
 
-assets/upi-dashboard.png — dashboard screenshot shown above.
+- `assets/upi-dashboard.png` — dashboard screenshot.
+- `data/README.md` — dataset source, column descriptions, and data preparation notes.
+- `UPI-Transaction-Dashboard.pbix` — Power BI report file, if applicable.
+- `README.md` — project documentation.
 
-data/README.md — dataset source, column descriptions, and data-preparation notes.
+*The structure above is a suggested example. Adjust it to match your actual repository files.*
 
-UPI-Transaction-Dashboard.pbix — Power BI report file, if applicable.
+---
 
-Adjust the example structure and filenames to match your actual repository. Do not upload confidential, personal, or unlicensed transaction data.
+## 🚀 Getting Started
 
-🚀 Getting Started
+1. Clone or download this repository.
+2. Open the dashboard file in the application used to build the report.
+3. Connect the report to the appropriate dataset if required.
+4. Refresh the data when appropriate and permitted.
+5. Explore the dashboard using its available filters and visualizations.
 
-Clone or download this repository.
+For reproducibility, document the dataset source, reporting period, data-cleaning process, and KPI calculation logic.
 
-Open the dashboard file in the application used to create it.
+---
 
-If prompted, connect the report to the documented dataset location.
+## 💡 Future Enhancements
 
-Refresh the data if appropriate and permitted.
+- [ ] Add a date-range filter.
+- [ ] Add a reset-filters option.
+- [ ] Create a dedicated fraud-analysis page.
+- [ ] Introduce dynamic business insight cards.
+- [ ] Improve chart readability and accessibility.
+- [ ] Add a detailed data dictionary.
+- [ ] Document data-cleaning and transformation steps.
+- [ ] Validate KPI calculations and data quality.
+- [ ] Add findings based on verified results from the dataset.
 
-Use the available filters and charts to explore metrics and trends.
+---
 
-Before publishing, document the dataset source, reporting period, data-cleaning steps, and assumptions used in calculations.
+## ⚠️ Data & Interpretation
 
-💡 Potential Enhancements
+The accuracy of the dashboard depends on the quality of the source data and the definitions used for each metric.
 
-Add a date-range slicer and a Reset Filters button.
+Before interpreting results, verify:
 
-Create a dedicated fraud-analysis page with validated fraud-rate and flagged-value measures.
+- Dataset source and reporting period.
+- Currency units and transaction amount definitions.
+- Transaction status classifications.
+- The meaning of suspected fraud labels.
+- Duplicate records and missing values.
+- Whether metrics update correctly when filters are applied.
 
-Add dynamic insight cards that respond to filter selections.
+**Important:** Transactions flagged as suspected fraud should not be presented as confirmed fraudulent transactions unless the dataset explicitly establishes that status.
 
-Improve chart-label readability and accessibility across screen sizes.
+Do not publish confidential, personal, or unlicensed transaction data.
 
-Add a data dictionary and document each KPI calculation.
+---
 
-Include data-quality checks for missing values, duplicates, and inconsistent categories.
-
-Add a findings section based on verified results from the dataset.
-
-⚠️ Data & Interpretation
-
-The dashboard is only as reliable as its source data and metric definitions. Before drawing conclusions, verify:
-
-Dataset source, date range, and currency units.
-
-Whether amounts represent transaction value, settled value, or another measure.
-
-How transaction statuses and suspected-fraud labels are defined.
-
-Whether totals and percentages recalculate correctly when filters are applied.
-
-Whether records are duplicated or categories contain inconsistent values.
-
-Do not present flagged transactions as confirmed fraud unless the source explicitly establishes that status. Do not publish sensitive data or information you are not authorized to share.
-
-👨‍💻 Author
-
-Suayush Kumar Das
-
-Data Analytics · Dashboard Design · Business Insights
+## 👨‍💻 Author
 
 <div align="center">
 
-If you find this project useful, consider giving the repository a ⭐
+### Suayush Kumar Das
 
-Made with a focus on clear, practical data storytelling.
+**Data Analytics | Dashboard Design | Business Insights**
+
+[GitHub Profile](https://github.com/SuayushkumarDas)
+
+</div>
+
+---
+
+<div align="center">
+
+⭐ **If you find this project useful, consider giving the repository a star!**
+
+*Turning data into insights through visualization and analytical thinking.*
 
 </div>
