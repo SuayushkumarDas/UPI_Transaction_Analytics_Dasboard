@@ -14,7 +14,8 @@ An interactive dashboard for analyzing UPI payment trends, transaction performan
 
 <br>
 
-<img src="https://github.com/SuayushkumarDas/UPI_Transaction_Analytics_Dasboard/raw/main/assets/upi-dashboard.png" alt="UPI Transaction Analytics Dashboard" width="100%">
+<img src="![Uploading Screenshot 2026-10-11 184239.png…]()
+">
 
 <br>
 
